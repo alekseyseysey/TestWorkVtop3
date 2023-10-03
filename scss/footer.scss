@@ -1,0 +1,147 @@
+footer {
+  max-width: 1920px;
+  height: 170px;
+  border: 4px solid #478bf9;
+  border-bottom: 0;
+  border-radius: 64px 64px 0 0;
+  display: flex;
+  align-items: center;
+}
+.footerWrapper {
+font-family: 'Lexend', sans-serif;
+  margin: 0 auto;
+  width: 1640px;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.pagesWrapper {
+  width: 600px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagesWrapper a{
+    text-decoration: none;
+    color: white;
+}
+.pagesWrapper a:hover{
+    color:  #478BF9;
+    text-decoration: underline;
+}
+.socialAreaWrapper {
+  width: 312px;
+  height: 66px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.ourSocial {
+    display: flex;
+    justify-content: flex-end;
+  width: 312px;
+  height: 20px;
+}
+
+.ourSocial span{
+    color: white;
+}
+.buttonSocialWrapper {
+  width: 312px;
+  height: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonSocial{
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+}
+
+.buttonSocial img{
+  border-radius: 100%;
+}
+
+.buttonSocial:hover img {
+
+  background: linear-gradient(to left, #478BF9, #83a4d4);
+}
+
+
+@media (max-width: 1600px) {
+  .footerWrapper {
+    font-family: 'Lexend', sans-serif;
+      margin: 0 auto;
+      width: 1640px;
+      height: 66px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+}
+
+@media (max-width: 1000px) {
+  .footerWrapper {
+    font-family: 'Lexend', sans-serif;
+      margin: 0 auto;
+      width: 1640px;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .ourSocial {
+      display: flex;
+      justify-content: center;
+  }
+
+  footer {
+    max-width: 1920px;
+    height: 170px;
+    border: 4px solid #478bf9;
+    border-bottom: 0;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 690px) {
+  .footerWrapper{
+    height: 100%;
+  }
+
+  footer{
+    height: 230px;
+  }
+  .pagesWrapper{
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3% ;
+  }
+  .ourSocial{
+
+  }
+  .headerContainerListLink{
+    width: 100%;
+  }
+
+  .footerWrapper{
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .pagesWrapper{
+    margin-top: 30px;
+    height: 50%;
+  }
+  .ourSocial{
+    justify-content: flex-start;
+  }
+}
+

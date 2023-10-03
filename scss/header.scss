@@ -1,0 +1,384 @@
+header{
+    padding-top: 16px;
+
+}
+
+.headerWrapper{
+    width: 1640px / 1920px * 100%;
+  position: relative;
+    margin: 0 auto;
+    display: flex;
+    height: 96px;
+    border: 4px solid #478BF9;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerNoneWrapper{
+    width: 287px / 1640px * 100%;
+}
+
+.headerAboutWrapper{
+    width: 568px / 1640px * 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.headerContainerListLink a {
+font-family: 'Lexend', sans-serif;
+color: white;
+text-decoration: none;
+
+}
+
+.headerMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerList {
+    position: absolute;
+    display: flex;
+    right: 170px / 1510px * 100%;
+  
+    li {
+      list-style: none;
+      margin-left: 20px;
+      margin-top: 10px;
+      white-space: nowrap;
+    }
+  
+ 
+  }
+
+  .headerLink {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+.headerLogWrapper {
+font-family: 'Lexend', sans-serif;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    // width: 287px / 1640px * 100%;
+}
+
+.enlanguage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75px;
+    height: 48px;
+    border: 2px solid #478BF9;
+    border-radius: 50px;
+    
+}
+
+
+
+
+.enLanguageSwitch{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 75px;
+    height: 48px;
+    border: 2px solid #478BF9;
+    border-radius: 50px;
+}
+
+
+
+// .enLanguageSwitch *{
+//     transition: all 0.3s ease
+// }
+
+
+.imageLanguage {
+    background-image: url(../src/iconPlanet.png);
+    width: 16px;
+    height: 16px;
+    
+
+}
+.textLanguage {
+    color: white;
+}
+
+.logInButtonWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 84px;
+    height: 48px;
+    border: 2px solid #478BF9;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.logInText a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.signUpButtonWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 97px;
+    height: 48px;
+    border: 2px solid #478BF9;
+    border-radius: 50px;
+    background-color: #478BF9;
+    margin-left: 10px;
+
+}
+.signUpText a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerList{
+    
+}
+
+.headerContainerListLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1230px) {
+    .headerNoneWrapper{
+        width:0;
+        height: 0;
+    }
+
+    .headerAboutWrapper{
+        width: 568px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headerLink {
+        color: white;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+ 
+      .enlanguage {
+        width: 65px;   
+    }
+
+    .enLanguageSwitch{
+        width: 65px;
+
+    }
+
+    .logInButtonWrapper {
+        width: 74px;
+    }
+
+    .signUpButtonWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 87px;
+        height: 48px;
+        border: 2px solid #478BF9;
+        border-radius: 50px;
+        background-color: #478BF9;
+        margin-left: 10px;
+    
+    }
+
+    .headerList{
+        margin-right: -40px;
+    }
+    
+}
+
+@media (max-width: 950px) {
+    body.lock{
+      overflow: hidden;
+  
+    }
+    .headerBurger {
+      height: 20px;
+      width: 30px;
+      display: block;
+      position: absolute;
+      right: 70px / 1510px *100%;
+      top: 25px / 75px *100%;
+      
+  
+   
+  
+      span{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        bottom: 9px;
+        z-index: 3;
+      }
+    }
+  
+    .headerBurger::before,
+    .headerBurger::after {
+      content: "";
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      height: 2px;
+      left: 0px;
+      z-index: 3;
+    }
+    .headerBurger::before{
+      top: 0px;
+    }
+    .headerBurger::after{
+      bottom: 0px;
+    }
+  
+    .headerMenu{
+      position: fixed;
+      top: -2000%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      padding: 70px 0px 0px 0px;
+      transition: 0.6s;
+      z-index: 2;
+     
+    }
+  
+    .headerMenu.active{
+      top: 0px;
+      // overflow: hidden;
+    }
+  
+    .headerContainerListLink{
+      height: 67px / 574px *100%;
+  width: 280px / 320px *100%;
+  margin-top: 26px / 320px *100%;
+  border-radius: nullpx;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #478BF9;
+  border-radius: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+
+  
+    }
+
+    #headerContainerListLinkEn{
+        display: none;
+
+    }
+
+    .headerContainerListLink{
+        width: 50%;
+    }
+
+    .logInButtonWrapper {
+        width: 74px;
+        border: none;
+
+    }
+
+    .signUpText{
+        border: none;
+
+    }
+   
+    
+    .signUpButtonWrapper{
+        border: none;
+        background-color: #478BF9;
+
+    }
+
+    #headerContainerListLinkLog{
+    display: flex;
+    justify-content: center;
+    }
+
+    #headerContainerListLinkSig{
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+  background-color: #478BF9;
+
+    }
+  
+
+    #headerContainerListLinkLogLi{
+        margin-left: 0px;
+    }
+
+    #headerContainerListLinkSigLi{
+        margin-left: 0px;
+
+    }
+
+    .headerList {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      left: 20px / 320px *100% ;
+      top: 50px;
+      margin-left: 0;
+    
+      li {
+        list-style: none;
+        
+       
+      }
+    
+      .headerLink {
+        color: white;
+
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  
+    .headerBurger.active::before{
+      transform: rotate(45deg);
+      top: 9px;
+          }
+        
+          .headerBurger.active::after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+          }
+  
+          .headerBurger.active{
+            span{
+              display: none;
+            }
+          }
+  }
+
+
